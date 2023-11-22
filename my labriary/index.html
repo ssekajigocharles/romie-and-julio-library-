@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CITY LIBRARY - Explore the latest books and trends.">
+    <title>CITY LIBRARY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-x7c5WBs65ePLMVN2CfQx8hcm7BCRvMOE5kgfcvhSKVbIgV5DcXdZ7HIaobgYVAYH" crossorigin="anonymous">
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #5e72e4; /* Purple header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .topnav {
+            text-align: center;
+            background-color: #3b5998; /* Dark blue navigation */
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #4a69bb; /* Darker blue on hover */
+        }
+
+        .search-container {
+            float: right;
+            margin-top: 10px;
+        }
+
+        input[type=text] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=text]:focus {
+            outline: none;
+            border-color: #5e72e4; /* Purple border on focus */
+        }
+
+        .active-hours {
+            float: right;
+            padding: 14px 16px;
+            color: white;
+        }
+
+        section {
+            background-color: #ffffff; /* White sections */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .book-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .book-icon {
+            display: inline-block;
+            margin: 0 15px;
+            background-color: #5e72e4; /* Purple background for icons */
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .book-icon i {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .book {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .book img {
+            width: 30%;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .book-description {
+            flex: 1;
+        }
+
+        .download-btn {
+            background-color: #5e72e4; /* Purple download button */
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #4a69bb; /* Darker purple on hover */
+        }
+
+        .footer {
+            background-color: #3b5998; /* Dark blue footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ROMIE AND JULIO LIBRARY</h1>
+    </header>
+
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Trends</a>
+        <a href="#">About Us</a>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search books..." name="search">
+            </form>
+        </div>
+        <div class="active-hours">
+            Active Hours: Mon-Fri 9AM-6PM
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2 style="color: #5e72e4;">Featured Books</h2>
+            <!-- Slideshow with different book photos -->
+            <div class="slideshow-container">
+                <img class="mySlides" src="5.jpg" alt="Fiction Book">
+                <img class="mySlides" src="1.jpg" alt="Non-Fiction Book">
+                <img class="mySlides" src="2.jpg" alt="Mystery Book">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section class="book-icons">
+            <h2 style="color: #5e72e4;">Discover Your Genre</h2>
+            <div class="book-icon">
+                <i class="fas fa-book"></i>
+                <p>Fiction....</p>
+            </div>
+            <div class="book-icon">
+                <i class="fas fa-scroll"></i>
+                <p>Non-Fiction</p>
+            </div>
+            <div class="book-icon">
+                <i class="fas fa-question"></i>
+                <p>Mystery.....</p>
+            </div>
+            <div class="book-icon">
+                <i class="fas fa-atom"></i>
+                <p>Science Fiction</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: #5e72e4;">Featured Books</h2>
+            <div class="book">
+                <img src="3.jpg" alt="Non-Fiction Book">
+                <div class="book-description">
+                    <p><strong>Non-Fiction Masterpiece</strong></p>
+                    <p>An insightful exploration into the world of non-fiction. </p>
+                    <button class="download-btn" onclick="downloadFile('non_fiction_manual.pdf')">Download Manual</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="m.jpg" alt="Mystery Book">
+                <div class="book-description">
+                    <p><strong>Mystery Unveiled</strong></p>
+                    <p>A gripping mystery that will keep you on the edge of your seat. </p>
+                    <button class="download-btn" onclick="downloadFile('mystery_manual.pdf')">Download Manual</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Trends</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@citylibrary.com</p>
+        </div>
+        <div class="copyright">
+            &copy; 2023 CITY LIBRARY. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // ... (Your existing script) ...
+        // Updated downloadFile function
+        function downloadFile(filePath) {
+            // You can implement file download logic here
+            window.location.href = filePath;
+        }
+    </script>
+
+    <script>
+        // Image slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        // Start the slideshow when the page loads
+        window.onload = function () {
+            showSlides();
+        };
+    </script>
+
+</body>
+
+</html>
